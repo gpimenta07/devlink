@@ -12,7 +12,7 @@ Login de teste:
 
 ## ✨ Funcionalidades
 
-- ✅ Autenticação de usuários (login e cadastro)
+- ✅ Autenticação de usuário (login)
 - ✅ Cadastro e edição de links personalizados
 - ✅ Personalização visual da página de links
 - ✅ Visualização pública do perfil com os links
