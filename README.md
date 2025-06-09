@@ -1,54 +1,91 @@
-# React + TypeScript + Vite
+# DevLink 🔗
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DevLink é uma aplicação web para criar e compartilhar seus links personalizados, ideal para perfis profissionais, influenciadores, criadores de conteúdo e pequenas empresas. Com uma interface simples e intuitiva, você pode reunir todos os seus links importantes em um só lugar e disponibilizá-los facilmente por meio de um link único.
 
-Currently, two official plugins are available:
+### 🌐 Acesse o projeto online:
+**[https://devlink-two-flame.vercel.app](https://devlink-two-flame.vercel.app)**  
+Login de teste:  
+📧 `teste@gmail.com`  
+🔑 `teste123`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ✅ Autenticação de usuários (login e cadastro)
+- ✅ Cadastro e edição de links personalizados
+- ✅ Personalização visual da página de links
+- ✅ Visualização pública do perfil com os links
+- ✅ Interface responsiva (mobile e desktop)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Tecnologias utilizadas
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Firebase (Authentication + Firestore)**
+- **Vite**
+- **Phosphor Icons / React Icons**
+- **Vercel** (Hospedagem)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 📁 Estrutura de pastas (resumo)
+
+```bash
+src/
+├── components/        # Componentes reutilizáveis
+├── pages/             # Páginas da aplicação
+├── services/          # Configurações do Firebase
+├── utils/             # Utilitários gerais
+├── App.tsx            # Componente principal
+├── main.tsx           # Entrada da aplicação
+
+---
+## 🛠️ Como rodar localmente
+
+### 1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/devlink.git
+cd devlink
+2. Instale as dependências:
+bash
+Copiar
+Editar
+npm install
+3. Configure o Firebase:
+Crie um arquivo .env na raiz do projeto com as variáveis de ambiente do Firebase:
+
+env
+Copiar
+Editar
+VITE_API_KEY=your_api_key
+VITE_AUTH_DOMAIN=your_auth_domain
+VITE_PROJECT_ID=your_project_id
+VITE_STORAGE_BUCKET=your_storage_bucket
+VITE_MESSAGING_SENDER_ID=your_messaging_sender_id
+VITE_APP_ID=your_app_id
+4. Rode o projeto:
+bash
+Copiar
+Editar
+npm run dev
+🧪 Login de teste
+Use as credenciais abaixo para explorar o sistema sem precisar se cadastrar:
+
+text
+Copiar
+Editar
+Email: teste@gmail.com
+Senha: teste123
+📦 Deploy
+Hospedado com Vercel:
+🔗 https://devlink-two-flame.vercel.app
+
+📄 Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+🙋‍♂️ Autor
+Desenvolvido por Gabriel Pimenta.
